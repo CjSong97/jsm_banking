@@ -8,7 +8,7 @@ const Home = () => {
         email: 'test@test.com'
     };
   return (
-    <section className='Home'>
+    <section className='home'>
         <div className='home-content'>
             <header className='home-header'>
                 <HeaderBox 
@@ -25,10 +25,13 @@ const Home = () => {
                     totalCurrentBalance={1000.58}
                  />
             </header>
+
+            RECENT TRANSACTIONS
+            </div>
+            
             <RightSidebar user={loggedIn}
             transactions={[]}
-            banks={[]}/>
-        </div>
+            banks={[{currentBalance: 12200.50}, {currentBalance: 80.02}]}/>
     </section>
   )
 }
