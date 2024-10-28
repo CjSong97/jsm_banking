@@ -11,7 +11,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 export const metadata: Metadata = {
   title: "Circa",
-  description: "Circa provides simple banking management in one singular app",
+  description: "Circa is the one stop personal banking platform for tracking personal finances",
   icons: {
     icon: '/icons/logo.svg'
   }
@@ -24,11 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${ibmPlexSerif.variable}`}
-      >
-        {children}
-      </body>
+      <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>{children}</body>
     </html>
   );
 }
